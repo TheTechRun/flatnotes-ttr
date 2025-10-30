@@ -11,8 +11,11 @@ This guide covers production deployment of flatnotes with subdirectory support u
 - Sufficient disk space for notes and index
 
 ### Installation Steps
+1a. **Copy the [docker-compose.yaml](https://github.com/TheTechRun/flatnotes-ttr/blob/develop/docker-compose.yaml0 and [.env](https://github.com/TheTechRun/flatnotes-ttr/blob/develop/.env.example)**:
 
-1. **Clone the repository**:
+OR
+
+1b. **Clone the repository**:
    ```bash
    git clone https://github.com/TheTechRun/flatnotes-ttr.git
    cd flatnotes-ttr
