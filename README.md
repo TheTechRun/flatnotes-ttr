@@ -5,6 +5,8 @@
   <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/dullage/flatnotes?style=for-the-badge">
 </p>
 
+**THIS IS A FORK WITH SUBDIRECTORIES ENABLED. See: [SUBDIRECTORY_SUPPORT.md](https://github.com/TheTechRun/flatnotes-ttr/blob/develop/SUBDIRECTORY_SUPPORT.md)**
+
 A self-hosted, database-less note-taking web app that utilises a flat folder of markdown files for storage.
 
 Log into the [demo site](https://demo.flatnotes.io) and take a look around. *Note: This site resets every 15 minutes.*
