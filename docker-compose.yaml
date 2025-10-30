@@ -2,7 +2,7 @@ services:
   flatnotes:
     container_name: flatnotes-ttr
     build:
-      context: https://github.com/TheTechRun/flatnotes-ttr.git#master
+      context: https://github.com/TheTechRun/flatnotes-ttr.git#develop
       dockerfile: Dockerfile.fork
     env_file:
       - .env
@@ -12,7 +12,7 @@ services:
       FLATNOTES_PATH: "/data"
       FLATNOTES_PORT: 8080
     volumes:
-      - "./notes:/data"
+      - "/home/ttr/notes:/data"
       - "./index:/data/.flatnotes"
     ports:
       - "8053:8080"
