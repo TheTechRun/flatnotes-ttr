@@ -1,3 +1,8 @@
+docker-compose.fork.yaml
+
+notes/
+notes/**
+
 # Python
 
 # Byte-compiled / optimized / DLL files

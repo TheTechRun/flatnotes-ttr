@@ -1,0 +1,19 @@
+services:
+  flatnotes:
+    container_name: flatnotes-ttr
+    build:
+      context: https://github.com/TheTechRun/flatnotes-ttr.git#master
+      dockerfile: Dockerfile.fork
+    env_file:
+      - .env
+    environment:
+      PUID: 5000
+      PGID: 5000
+      FLATNOTES_PATH: "/data"
+      FLATNOTES_PORT: 8080
+    volumes:
+      - "./notes:/data"
+      - "./index:/data/.flatnotes"
+    ports:
+      - "8053:8080"
+    restart: unless-stopped

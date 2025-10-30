@@ -15,8 +15,8 @@ def camel_case(snake_case_str: str) -> str:
 
 def is_valid_filename(value):
     """Raise ValueError if the declared string contains any of the following
-    characters: <>:"/\\|?*"""
-    invalid_chars = r'<>:"/\|?*'
+    characters: <>:"\\|?*"""
+    invalid_chars = r'<>:"\|?*'
     if any(invalid_char in value for invalid_char in invalid_chars):
         raise ValueError(
             "title cannot include any of the following characters: "

@@ -223,11 +223,11 @@ class FileSystemNotes(BaseNotes):
         )
 
     def _list_all_note_filenames(self) -> List[str]:
-        """Return a list of all note filenames."""
+        """Return a list of all note filenames including relative paths."""
         return [
-            os.path.split(filepath)[1]
+            os.path.relpath(filepath, self.storage_path)
             for filepath in glob.glob(
-                os.path.join(self.storage_path, "*" + MARKDOWN_EXT)
+                os.path.join(self.storage_path, "**", "*" + MARKDOWN_EXT), recursive=True
             )
         ]
 
@@ -390,5 +390,9 @@ class FileSystemNotes(BaseNotes):
     @staticmethod
     def _write_file(filepath: str, content: str, overwrite: bool = False):
         logger.debug(f"Writing to '{filepath}'")
+        # Create directory if it doesn't exist
+        dir_path = os.path.dirname(filepath)
+        if dir_path:  # Only create if dirname is not empty
+            os.makedirs(dir_path, exist_ok=True)
         with open(filepath, "w" if overwrite else "x") as f:
             f.write(content)
