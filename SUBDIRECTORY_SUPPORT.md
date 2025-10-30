@@ -154,5 +154,3 @@ Personal/health/workout-routine.md
 3. **Enhanced Search**: Search within specific topics or across all notes
 4. **Scalability**: No limit on directory depth or number of subdirectories
 5. **Flexibility**: Mix flat and hierarchical organization as needed
-
----
