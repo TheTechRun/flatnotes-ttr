@@ -60,62 +60,13 @@ A quick and easy way to get started with flatnotes is to host it on PikaPods. Ju
 
 ### Self Hosted
 
-If you'd prefer to host flatnotes yourself then the recommendation is to use Docker.
+If you want to host flatnotes yourself, then the recommendation is to use Docker.
 
-### Example Docker Run Command
-
-```shell
-docker run -d \
-  -e "PUID=1000" \
-  -e "PGID=1000" \
-  -e "FLATNOTES_AUTH_TYPE=password" \
-  -e "FLATNOTES_USERNAME=user" \
-  -e 'FLATNOTES_PASSWORD=changeMe!' \
-  -e "FLATNOTES_SECRET_KEY=aLongRandomSeriesOfCharacters" \
-  -v "$(pwd)/data:/data" \
-  -p "8080:8080" \
-  dullage/flatnotes:latest
-```
-
-### Example Docker Compose
-```yaml
-version: "3"
-
-services:
-  flatnotes:
-    container_name: flatnotes
-    image: dullage/flatnotes:latest
-    environment:
-      PUID: 1000
-      PGID: 1000
-      FLATNOTES_AUTH_TYPE: "password"
-      FLATNOTES_USERNAME: "user"
-      FLATNOTES_PASSWORD: "changeMe!"
-      FLATNOTES_SECRET_KEY: "aLongRandomSeriesOfCharacters"
-    volumes:
-      - "./data:/data"
-      # Optional. Allows you to save the search index in a different location: 
-      # - "./index:/data/.flatnotes"
-    ports:
-      - "8080:8080"
-    restart: unless-stopped
-```
-
-See the [Environment Variables](https://github.com/dullage/flatnotes/wiki/Environment-Variables) article in the wiki for a full list of configuration options.
-
-## Roadmap
-
-I want to keep flatnotes as simple and distraction-free as possible which means limiting new features. This said, I welcome feedback and suggestions.
-
-## Contributing
+See: [DOCKER_INSTALL.md](https://github.com/TheTechRun/flatnotes-ttr/blob/develop/DOCKER_INSTALL.md)
 
 If you're interested in contributing to flatnotes, then please read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Sponsorship
-
-If you find this project useful, please consider buying me a beer. It would genuinely make my day.
-
-[![Sponsor](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/Dullage)
 
 ## Thanks
 
