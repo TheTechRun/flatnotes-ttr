@@ -51,22 +51,15 @@ See [the wiki](https://github.com/dullage/flatnotes/wiki) for more details.
 
 ## Getting Started
 
-### Hosted
-
-A quick and easy way to get started with flatnotes is to host it on PikaPods. Just click the button below and follow the instructions.
-
-[![PikaPods](https://www.pikapods.com/static/run-button-34.svg)](https://www.pikapods.com/pods?run=flatnotes)
-
-
 ### Self Hosted
 
 If you want to host flatnotes yourself, then the recommendation is to use Docker.
 
 See: [DOCKER_INSTALL.md](https://github.com/TheTechRun/flatnotes-ttr/blob/develop/DOCKER_INSTALL.md)
 
-If you're interested in contributing to flatnotes, then please read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+# Contribute
 
-## Sponsorship
+If you're interested in contributing to flatnotes, then please read the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## Thanks
 
