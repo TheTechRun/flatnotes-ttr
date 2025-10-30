@@ -74,7 +74,7 @@ notes/
 - This allows FastAPI to capture the full path including slashes
 - Applied to both API endpoints (`/api/notes/{title:path}`) and web interface (`/note/{title:path}`)
 
-## 📱 User Interface
+## User Interface
 
 ### Creating Notes
 1. Click "New Note" in the flatnotes interface
@@ -94,15 +94,15 @@ notes/
 
 ## Features Supported
 
--  **Multi-level subdirectories** (e.g., `Projects/alpha/documentation`)
--  **Automatic directory creation** (no manual setup required)
--  **Full search integration** (subdirectory notes are searchable)
--  **Web interface navigation** (direct URLs to subdirectory notes)
--  **API compatibility** (all endpoints work with subdirectory paths)
--  **Backward compatibility** (existing notes continue to work)
--  **Content highlighting** (search works on subdirectory note content)
+- **Multi-level subdirectories** (e.g., `Projects/alpha/documentation`)
+- **Automatic directory creation** (no manual setup required)
+- **Full search integration** (subdirectory notes are searchable)
+- **Web interface navigation** (direct URLs to subdirectory notes)
+- **API compatibility** (all endpoints work with subdirectory paths)
+- **Backward compatibility** (existing notes continue to work)
+- **Content highlighting** (search works on subdirectory note content)
 
-##  Migration Notes
+## Migration Notes
 
 ### For Existing Users
 - No migration required - existing notes continue to work unchanged
@@ -140,21 +140,6 @@ Personal/finance/investment-strategy.md
 Personal/health/workout-routine.md
 ```
 
-## 🛠️ Development Notes
-
-### Docker Compose Configuration
-- `docker-compose.yaml`: Production build from GitHub repository
-- `docker-compose.fork.yaml`: Local development build from source
-- Both configurations support the new subdirectory functionality
-
-### Testing
-The implementation has been tested with:
-- Single-level subdirectories: `Linux/docker-setup`
-- Multi-level subdirectories: `Development/python/virtualenv-guide`
-- Special characters in names: `Projects/project-alpha/requirements-v2.0`
-- Search functionality across all directory levels
-- Web interface navigation to subdirectory notes
-
 ## Limitations
 
 - **Forward slash is the only directory separator** - backslashes are still filtered for filename safety
@@ -171,7 +156,3 @@ The implementation has been tested with:
 5. **Flexibility**: Mix flat and hierarchical organization as needed
 
 ---
-
-**Implementation Status**: Complete and Tested  
-**Compatibility**: Backward Compatible  
-**Deployment**: Ready for Production
