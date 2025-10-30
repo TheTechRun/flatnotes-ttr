@@ -2,11 +2,11 @@
 
 This implementation adds support for organizing notes in subdirectories using forward slash (`/`) syntax in note titles.
 
-## 🚀 Feature Overview
+## Feature Overview
 
 Users can now create and organize notes in hierarchical directory structures directly from the flatnotes interface, enabling better organization and categorization of notes.
 
-## 📁 How It Works
+## How It Works
 
 ### Creating Subdirectory Notes
 
@@ -45,7 +45,7 @@ notes/
 └── standalone-note.md
 ```
 
-## 🔧 Technical Implementation
+## Technical Implementation
 
 ### Frontend Changes
 
@@ -92,17 +92,17 @@ notes/
 - Search results show complete note titles including directory paths
 - Title highlighting works on the full path (e.g., `Development/<highlight>python</highlight>/virtualenv-guide`)
 
-## ✅ Features Supported
+## Features Supported
 
-- ✅ **Multi-level subdirectories** (e.g., `Projects/alpha/documentation`)
-- ✅ **Automatic directory creation** (no manual setup required)
-- ✅ **Full search integration** (subdirectory notes are searchable)
-- ✅ **Web interface navigation** (direct URLs to subdirectory notes)
-- ✅ **API compatibility** (all endpoints work with subdirectory paths)
-- ✅ **Backward compatibility** (existing notes continue to work)
-- ✅ **Content highlighting** (search works on subdirectory note content)
+-  **Multi-level subdirectories** (e.g., `Projects/alpha/documentation`)
+-  **Automatic directory creation** (no manual setup required)
+-  **Full search integration** (subdirectory notes are searchable)
+-  **Web interface navigation** (direct URLs to subdirectory notes)
+-  **API compatibility** (all endpoints work with subdirectory paths)
+-  **Backward compatibility** (existing notes continue to work)
+-  **Content highlighting** (search works on subdirectory note content)
 
-## 🔄 Migration Notes
+##  Migration Notes
 
 ### For Existing Users
 - No migration required - existing notes continue to work unchanged
@@ -114,7 +114,7 @@ notes/
 - No database changes - uses existing file-based storage
 - Search index automatically updated to include new file locations
 
-## 🚦 Usage Examples
+## Usage Examples
 
 ### Technical Documentation
 ```
